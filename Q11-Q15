@@ -1,0 +1,44 @@
+#Q11
+#WRITE A FUNCTION CALLED SHOW_STARS(ROWS). IF ROWS ARE 5
+n=6;
+for i in range(n):
+    for j in range(i):
+        print('*',end="")
+    print('')
+for i in range(n,0,1):
+    for j in range(i):
+        print('*',end="")
+    print('')
+    
+#Q12
+#WRITE A PROGRAM TO REMOVE CHARACTERS FROM A STRING STARTING FROM ZERO UP TO N AND RETURN A NEW STRING
+string=input("enter a string: ")
+n=int(input("enter no of char to be removed: "))
+new_string=string.replace(string[0:n],"")
+print(new_string)
+
+#Q13
+#ITERATE THE GIVEN LIST OF NUMBERS AND PRINT ONLY THOSE NUMBERS WHICH ARE DIVISIBLE BY 5
+input_string = input('Enter elements: ')
+list1 = input_string.split()
+for i in range(len(list1)):
+    list1[i] = int(list1[i])
+    if list1[i]%5==0:
+        print(list1[i],end=" ")
+        
+#Q14
+#WRITE A PROGRAM TO FIND HOW MANY TIMES SUBSTRING "HI" APPEARS IN THE GIVEN STRING
+str1=input("enter your string: ")
+k=0
+for i in range(len(str1)-1):
+    if "Hi"==str1[i:i+2]:
+        k=k+1
+print(k)
+
+#Q15
+#PRINT THE PATTERN
+rows = 6
+for i in range(rows):
+    for j in range(i):
+        print(i, end=' ')
+    print('')
