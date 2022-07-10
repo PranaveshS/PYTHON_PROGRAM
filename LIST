@@ -1,0 +1,43 @@
+#Q17
+#TO INTERCHANGE FIRST AND LAST ELEMENTS IN A LIST
+def swapList(newList):
+    size = len(newList)
+    temp = newList[0]
+    newList[0] = newList[size - 1]
+    newList[size - 1] = temp
+    return newList
+
+#Q18
+#TO SWAP TWO ELEMENTS IN A LIST
+def swapPositions(l, a, b):  
+    l[a], l[b] = l[b], l[a]
+    return list
+l = [23, 65, 19, 90]
+a, b  = 1, 3
+print(swapPositions(l, a-1, b-1))
+
+#Q19
+#WAYS TO FIND LENGTH OF LIST
+n = len([10, 20, 30])
+print("The length of list is: ", n)
+
+#20
+#MAXIMUM OF TWO NUMBERS
+a=[1,2,3,4]
+b=[9,8,7,6]
+def maximum(a, b): 
+    if a >= b:
+        return a
+    else:
+        return b
+        
+#Q21
+#MINIMUM OF TWO NUMBERS
+a=[1,2,3,4]
+b=[9,8,7,6]
+def minimum(a, b):
+    if a <= b:
+        return a
+    else:
+        return b
+        
