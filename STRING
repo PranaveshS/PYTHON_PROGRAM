@@ -1,0 +1,15 @@
+#Q23
+#REVERSE WORDS IN A GIVEN STRING
+string = "WELCOME TO AI&DS"
+s = string.split()[::-1]
+l = []
+for i in s:
+    l.append(i)
+print(" ".join(l))
+
+#Q24
+#WAYS TO REMOVE I'TH CHARACTER FROM STRING
+str = "HELLO GUYS"
+print ("The original string is : " +str)
+new_str = str[:2] + str[3:]
+print ("The string after removal of i'th character : " + new_str)
