@@ -1,0 +1,99 @@
+#Q1
+#PRINT HELLO WORLD IN THE OUTPUT SCREEN
+print("HELLO WORLD")
+
+#Q2
+#GET THE INPUT FROM THE USER AND PERFORM ADDITION OF TWO NUMBERS
+X = input('Enter first number: ')
+Y = input('Enter second number: ')
+sum = float(X) + float(Y)
+print('The sum of {} and {} is {}'.format(X, Y, sum))
+
+#Q3
+#GET THE INPUT FROM THE USER AND PERFORM ADDITION OF TWO NUMBERS
+X = input('Enter first number: ')
+Y = input('Enter second number: ')
+sum = float(X) + float(Y)
+print('The sum of {} and {} is {}'.format(X, Y, sum))
+
+#Q4
+#CONVERT THE ENTERED KILOMETRES(CONVERSION FACTOR=0.621371)
+x=float(input("Enter the number:"))
+x*=0.621371
+print(x)
+
+#Q5
+#CHECK WHETHER THE GIVEN NUMBER IS POSITIVE,NEGATIVE,OR 0
+n = float(input("Number: "))
+if n >= 0:
+  if n == 0:
+      print("It is Zero!")
+  else:
+      print("It is a Positive number")
+else:
+  print("It is a Negative number")
+  
+#Q6
+#VERIFY THAT THE GIVEN YEAR IS A LEAP YEAR
+year = int(input('Enter year : '))
+if (year%4 == 0 and year%100 != 0) or (year%400 == 0):
+    print(yeaR, "is a leap year")
+else :
+    print(year, "is not a leap year.")
+    
+#Q7
+
+#DISPLAY THE PRIME NUMBERS WITHIN THE GIVEN INTERVAL
+X = int(input ("Please enter the Lowest Range Value: "))  
+Y = int(input ("Please enter the Upper Range Value: "))  
+print ("The Prime Numbers btw the range are: ")  
+for number in range (X, Y + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number) 
+            
+#Q8
+#DISPLAY THE FIBONACCI SEQUENCE UP TO N'TH TERM
+n=int(input("enter the number:"))
+a=0
+b=1
+if n<=0:
+    print("enter a valid number ")
+elif n==1:
+    print(a)
+else:
+    print(a)
+    print(b)
+    for i in range(2,n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+        
+#Q9
+#CHECK IF THE NUMBER IS AN ARMSTRONG NUMBER OR NOT
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+   
+#Q10
+#FIND THE SUM OF NATURAL NUMBERS UP TO N'TH TERM
+n = int(input("Enter the Number: ")) 
+X = 0
+Y = 1
+while (Y <= n):
+    X = X + Y
+    Y = Y + 1
+print("The Sum of Natural Numbers from 1 to {} = {}".format(n, X))
+
