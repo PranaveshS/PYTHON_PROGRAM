@@ -1,0 +1,20 @@
+#41
+#ASSIGNING SUBSEQUENT ROWS TO MATRIX FIRST ROW ELEMTS
+matrix = [[5, 8, 9], [2, 0, 9], [5, 4, 2], [2, 3, 9]]
+print("The original list : " + str(test_list))
+res = {matrix[0][ele] :  matrix[ele + 1] for ele in range(len(matrix) - 1)}
+print("The Assigned Matrix : " + str(res))
+
+#42
+#ADDING AND SUBTRACTING MATRICES
+import numpy as np
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[4, 5], [6, 7]])
+print("First matrix")
+print(A)
+print("Second matrix")
+print(B)
+print("Addition of two matrix")
+print(np.add(A, B))
+print("Subtraction of two matrix")
+print(np.subtract(A, B))
