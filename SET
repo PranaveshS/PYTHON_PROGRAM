@@ -1,0 +1,11 @@
+#36
+#FIND THE SIZE OF A SET IN PYTHON
+set = {1, 1, 1, 2, 3, 4, 5}
+len(set)
+
+#37
+#ITERATE OVER A SET
+set1 = set("HELLO")
+for val in set1:
+    print(val)
+    
