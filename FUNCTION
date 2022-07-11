@@ -1,0 +1,4 @@
+#46
+#HOW TO PRINT MULTIPLE ARGUMENTS
+def a1(name, num):
+    print("Hello from ", name + ', ' + num)
