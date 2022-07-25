@@ -1,0 +1,23 @@
+1)FINDALL()
+import re
+word = "welcome to this beautiful world"
+x = re.findall("to", word)
+print(x)
+
+2)SEARCH()
+import re
+par = "welcome to this beautiful world"
+x = re.search("world", par)
+print(x)
+
+3)SPLIT()
+import re
+sen = "welcome to this beautiful world"
+x = re.split("\s", sen)
+print(x)
+
+4)SUB()
+import re
+part = "this  is beautiful world"
+x = re.sub("\s", "n", part)
+print(x)
