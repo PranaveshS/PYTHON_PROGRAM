@@ -1,0 +1,54 @@
+1)ZeroDivisionError
+marks = 10000
+try:
+    a = marks / 0 
+    print(a)
+except:
+    print ("An error occurred")
+    print(marks)
+    
+2)UNEXPECTED INDENT
+a = [1, 2, 3]
+try: 
+    print ("Second element = %d" %(a[1]))
+    print ("Fourth element = %d" %(a[3]))
+except:
+    print ("An error occurred")
+    
+3)VALUE ERROR
+while True:
+...     try:
+...         x = int(input("Please enter a number: "))
+...         break
+...     except ValueError:
+...         print("Oops!  That was no valid number.  Try again...")
+...
+
+4)FILE OPENING ERROR
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+ 
+5)INDENTATION ERROR 
+a = 10
+try:
+     b = 19
+     c = a+b
+except:
+    print("indentation error is occured")
+print(c)
+
+6)NAME ERROR
+try:
+  print(s)
+except NameError:
+  print("Variable s is not defined")
+except:
+  print("Something else went wrong")
