@@ -1,0 +1,74 @@
+1)SINGLE INHERITANCE
+class A:
+    def display(self):
+        print("Hello")
+class B(A):
+    def display(self):
+        super().display()
+        print("World")
+b = B()
+b.display()
+
+2)MULTIPLE INHERITANCE
+class A:
+    def sayHi(self):
+        print("Hi")
+class B:
+    def sayBye(self):
+        print("Bye")
+class C(A, B):
+    def display(self):
+        super().sayHi()
+        super().sayBye()      
+c = C()
+c.display()
+
+3)MULTILEVEL INHERITANCE
+class A:
+    def display(self):
+        print("Class A") 
+class B(A):
+    def display(self):
+        super().display()
+        print("Class B")
+class C(B):
+    def display(self):
+        super().display()
+        print("Class C")
+c = C()
+c.display()
+
+4)HIERARCHICAL INHERITANCE
+class A:
+    def display(self, output):
+        print(output)      
+class B(A):
+    def display(self):
+        super().display('Hello from B')
+class C(A):
+    def display(self):
+        super().display('Hello from C')
+b = B()
+b.display()
+c = C()
+c.display()
+
+5)HYBRID INHERITANCE
+class A:
+    def display(self):
+        print("Super Parent display method")
+class B(A):
+    def display(self):
+        super().display()
+class C(B):
+    def display(self):
+        super().display()
+        print("Class C display method")
+class D(B):
+    def display(self):
+        super().display()
+        print("Class D display method")
+c = C()
+c.display()
+d = D()
+d.display()
