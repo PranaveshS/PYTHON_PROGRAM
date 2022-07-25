@@ -1,0 +1,106 @@
+#TO DECLARE SINGLE AND MULTIDIMENSIONAL ARRAY
+import numpy as np
+arr1 = np.array([10,20,30,40,50])
+arr1
+b = np.array([20,34,45,56,78])
+print(b)
+arr2 = np.array([[0,10,20],[20,40,50],[30,40,50]])
+arr2
+arr3 = np.array([[12,'str',-45,56.8],[34,45,45,89]])
+arr3
+
+1)SUM FUNCTION
+arr1.sum()
+
+arr2.sum(axis = 0)  --------->#VERTICAL
+
+arr2.sum(axis = 1)  --------->#HORIZONTAL
+
+2)PRODUCT FUNCTION
+np.prod(arr1)
+
+np.product(arr2,axis = 0)
+
+np.prod(arr2,axis = 1)
+
+3)AVERAGE FUNCTION
+np.average(arr1)
+
+np.average(arr2,axis =0)
+
+np.average(arr2,axis = 1)
+
+4)MINIMUM FUNCTION
+arr1.min()
+
+arr2.min(axis = 0)
+
+arr2.min(axis = 1)
+
+arr2.min(0)
+
+import numpy as np
+x = np.random.randint(1, 10, size = (5, 5))
+print(x)
+print()
+y = np.random.randint(1, 10, size = (5, 5))
+print(y)
+print('\nMinimum Array')
+print(np.minimum(x, y))
+
+5)MAXIMUM FUNCTION
+import numpy as np
+a = np.array([1, 20, 5, 22, 8, 15])
+print(a)
+b = np.array([12, 9, 3, 42, 6, 33])
+print(b)
+print('\nMaximum Array')
+print(np.maximum(a, b))
+
+6)MEAN FUNCTION
+arr1.mean()
+
+arr2.mean()
+
+7)MEDIAN FUNCTION
+np.median(arr1)
+np.median(arr2)
+np.median(arr2, axis = 0)
+np.median(arr2, axis = 1)
+
+8)VARIANCE FUNCTION
+arr1.var()
+arr2.var()
+x.var()
+y.var()
+
+9)CUMULATIVE SUM
+arr1.cumsum()
+arr2.cumsum()
+
+10)CUMULATIVE PRODUCT
+arr1.cumprod()
+arr2.cumprod()
+arr2.cumprod(axis = 0)
+arr2.cumprod(axis = 1)
+
+11)PERCENTILE FUNCTION
+np.percentile(arr1, 10)
+np.percentile(arr1, 30)
+np.percentile(arr1, 50)
+np.percentile(arr1, 75)
+np.percentile(arr1, 100)
+
+12)ARGMIN FUNCTION
+import numpy as np
+array = np.arange(8)
+print("INPUT ARRAY : \n", array)
+print("\nIndices of min element : ", np.argmin(array, axis=0))
+
+13)ARGMAX FUNCTION
+import numpy as np
+array = np.arrange(12).reshape(3, 4)
+print("INPUT ARRAY : \n", array)
+print("\nMax element : ", np.argmax(array))
+print("\nIndices of Max element : ", np.argmax(array, axis=0))
+print("\nIndices of Max element : ", np.argmax(array, axis=1))
